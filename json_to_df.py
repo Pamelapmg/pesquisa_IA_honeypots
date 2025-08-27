@@ -29,7 +29,7 @@ def extrair_features(events):
 
     return features
 
-#abri somente um arquivo para teste
+#abri somente um arquivo para teste, ele é um json com vários json dentro 
 with open("/content/cowrie_2019-05-14.json", "r") as f:
     data = json.load(f)
 
@@ -52,4 +52,4 @@ for session_id, group in df.groupby("session_key"):
 
 df_features = pd.DataFrame(sessions_features)
 
-print(df_features)
+print(df_features) 
